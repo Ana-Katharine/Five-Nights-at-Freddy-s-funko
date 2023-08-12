@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>{{ texto  }}</h1>
+  <section id="personagens-favoritos">
+      <h2>Veja quais são os Personagens favoritos</h2>
+      <mat-grid-list cols="3" rowHeight="3:4">
+      <div *ngFor="let personagem of personagens; let i = index">
+          <mat-grid-tile *ngIf="personagem.favorito">
+              <mat-card>
+                  <img mat-card-image [src]="personagem.foto" [alt]="personagem.titulo" />
+                  <mat-card-content>
+                      <h3>{{ personagem.titulo }}</h3>
+                      <ul>
+                          <li>Preço: {{ personagem.preco | currency }}</li>
+                      </ul>
+                  </mat-card-content>
+                  <mat-card-actions>
+                      <button
+                          [class]="personagem.favorito === false ? 'favorite' : 'favorite-checked'"
+                          [title]="personagem.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                          mat-button
+                          (click)="toogleFavorito(i)">
+                      <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite">favorite</mat-icon>
+                  </button> 
+                      <button mat-button (click)="verHistoria(personagem.id)">História</button>
+                  </mat-card-actions>
+              </mat-card>
+          </mat-grid-tile>
+      </div>
+  </mat-grid-list>
+</section>
+<section id="personagem-jogo">
+  <h2>Personagens do Jogo</h2>
+  <mat-grid-list cols="3" rowHeight="3:4">
+      <mat-grid-tile *ngFor="let personagem of personagens; let i = index">
+          <mat-card>
+              <img mat-card-image [src]="personagem.foto" [alt]="personagem.titulo" />
+              <mat-card-content>
+                  <h3>{{ personagem.titulo }}</h3>
+                  <ul>
+                      <li>Preço: {{ personagem.preco | currency }}</li>
+                  </ul>
+              </mat-card-content>
+              <mat-card-actions>
+                  <button
+                      [class]="personagem.favorito === false ? 'favorite' : 'favorite-checked'"
+                      [title]="personagem.favorito === false ? 'Adicionar aos favoritos' : 'Remover dos favoritos'"
+                      mat-button
+                      (click)="toogleFavorito(i)">
+                      <mat-icon aria-hidden="false" aria-label="Favoritos" fontIcon="favorite"></mat-icon>
+                  </button> 
+                  <button mat-button (click)="verHistoria(personagem.id)">História</button>
+              </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+  </mat-grid-list>
+</section>
+</div>
+

@@ -1,0 +1,46 @@
+@import "../app.component.scss";
+
+mat-toolbar {
+    font-family: $fonte-principal;
+    background-color: $verde-envelhecido;
+    color: $branco-esmaecido;
+    .container {
+        width: 1140px;
+        display: flex;
+        margin: auto;
+        h1 {
+            font-family: $fonte-principal;
+            font-size: $extra-grande;
+            color: $branco-esmaecido;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            cursor: pointer; 
+        }
+        .menu-spacer {
+            flex: 1 1 auto;
+        }
+        button {
+            margin-top: 10px;
+            &:hover {
+                color: $cor-secundaria;
+            }
+        }
+    }
+}
+@media (min-width: 321px){
+
+}
+@media (min-width: 376px) {
+
+}
+@media (min-width: 426px) {
+
+}
+@media (min-width: 769px) {
+
+}
+@media (min-width: 1025px) {
+    
+}

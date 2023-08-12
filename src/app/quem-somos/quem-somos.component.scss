@@ -1,0 +1,45 @@
+@import "../app.component.scss";
+
+.empresa{
+    background-color: $cor-secundaria;
+}
+.container{
+    width: 1140px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    min-height: calc(100vh - 234px);
+    h2{
+        padding: 50px 0px 10px 0px;
+        font-family: $fonte-principal;
+        font-size: $extra-grande;
+        color: $branco-esmaecido;
+        line-height: $extra-grande;
+        text-align: center;
+    }
+    .quem-somos{
+        display: flex;
+        gap: 30px;
+        img{
+            width: 100%;
+            margin-bottom: 20px;
+            
+        }
+        .descricao{
+            width: 100%;
+            ul{
+                font-family: $fonte-secundaria;
+                color: $branco-esmaecido;
+                font-size: $media;
+                line-height: $grande;
+                text-align: justify;
+                padding-top: 20px;
+            }
+            li{
+                margin-top: 10px;
+                margin-bottom: 25px;
+                font-family: $fonte-secundaria;
+            }
+        }
+    }
+}
