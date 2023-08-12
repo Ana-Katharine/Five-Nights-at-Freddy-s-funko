@@ -2,7 +2,7 @@
 
 ## Projeto desenvolvido em Angular no pelo programa Star Tech
 
-![Print do projeto](https://i.ibb.co/5n4dtv9/Screenshot-2023-08-04-at-16-36-18.png)]
+![Print do projeto](https://i.ibb.co/7z2PJsg/Whats-App-Image-2023-08-11-at-23-16-05.jpg)
 
 ## Tecnologias Aplicadas
 - Angular
