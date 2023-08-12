@@ -14,7 +14,7 @@ Angular precisa do [Node.js](https://nodejs.org/) v16+ para funcionar.
 
 Clonar o repositório e entrar na pasta do projeto
 ```sh
-git clone https://github.com/roofranklin/angular_01.git
+git clone https://github.com/Ana-Katharine/Five-Nights-at-Freddy-s-funko.git
 cd angular_01
 ```
 
